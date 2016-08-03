@@ -51,3 +51,6 @@ gem 'sass-rails'
 
 # Use Devise gem for user authentication
 gem 'devise'
+
+# Use Simpleform for form creation
+gem 'simple_form'

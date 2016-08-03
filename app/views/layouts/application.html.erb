@@ -14,7 +14,7 @@
     <div class="container-fluid">
       <!-- Brand and toggle get grouped for better mobile display -->
       <div class="navbar-header">
-        <a class="navbar-brand" href="<% link_to 'root_path' %>"> Flixter</a>
+        <%= link_to 'Flixter', root_path, class: 'navbar-brand' %>
       </div>
 
 
@@ -47,7 +47,7 @@
     <div class="container">
       <b>Footer Here</b>
       <br />
-      <%= link_to 'Link', '#' %>
+      <%= link_to 'Teach A Course', new_instructor_course_path %>
     </div>
   </div>
 </body>
