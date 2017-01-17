@@ -1,6 +1,5 @@
 class Instructor::LessonsController < ApplicationController
-	before_action :authenticate_user!
-	before_action :require_authorized_for_current_section
+	before_action :authenticate_user!, :require_authorized_for_current_section
 
 	def new
 		@lesson = Lesson.new
@@ -19,6 +18,7 @@ class Instructor::LessonsController < ApplicationController
 		end
 	end
 
+# Exposes method to the "views"
 	helper_method :current_section
 	def current_section
 		@current_section ||= Section.find(params[:section_id])
