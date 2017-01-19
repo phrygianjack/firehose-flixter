@@ -33,6 +33,9 @@ gem 'figaro'
 # Add gem fog to connect S3 to CarrierWave
 gem 'fog'
 
+# Add MiniMagick gem for image manipulation
+gem 'mini_magick', '~> 4.3.1'
+
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
