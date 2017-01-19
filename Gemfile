@@ -24,6 +24,15 @@ gem 'turbolinks'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 1.2'
 
+# Add CarrierWave for image uploading
+gem 'carrierwave', '~> 1.0'
+
+# Add gem Figaro to protect Credentials
+gem 'figaro'
+
+# Add gem fog to connect S3 to CarrierWave
+gem 'fog'
+
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
