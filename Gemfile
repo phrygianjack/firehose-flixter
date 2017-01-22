@@ -27,6 +27,9 @@ gem 'jbuilder', '~> 1.2'
 # Add CarrierWave for image uploading
 gem 'carrierwave', '~> 1.0'
 
+# Add AWS function to CarrierWave
+gem 'carrierwave-aws'
+
 # Add gem Figaro to protect Credentials
 gem 'figaro'
 
@@ -66,3 +69,4 @@ gem 'devise'
 
 # Use Simpleform for form creation
 gem 'simple_form'
+
