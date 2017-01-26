@@ -35,7 +35,7 @@ gem 'carrierwave-aws'
 gem 'figaro'
 
 # Add gem fog to connect S3 to CarrierWave
-gem 'fog'
+# gem 'fog'
 
 # Add MiniMagick gem for image manipulation
 gem 'mini_magick', '~> 4.3.1'
