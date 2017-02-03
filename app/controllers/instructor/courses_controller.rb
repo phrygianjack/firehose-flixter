@@ -1,3 +1,5 @@
+# app/controllers/instructor/courses_controller.rb 
+
 class Instructor::CoursesController < ApplicationController
   before_action :authenticate_user!
   before_action :require_authorized_for_current_course, only: [:show]
@@ -28,7 +30,7 @@ class Instructor::CoursesController < ApplicationController
 
   helper_method :current_course
   def current_course
-    @current_course ||= Course.find(params[:id])
+    @current_course ||= Course.find(params[:course_id])
   end
 
   def course_params
