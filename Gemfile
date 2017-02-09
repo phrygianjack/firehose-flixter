@@ -34,6 +34,9 @@ gem 'carrierwave-aws'
 # Add gem Figaro to protect Credentials
 gem 'figaro'
 
+# Add Stripe gem to process credit card payments
+gem 'stripe'
+
 # Add gem fog to connect S3 to CarrierWave
 # gem 'fog'
 
