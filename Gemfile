@@ -37,6 +37,9 @@ gem 'figaro'
 # Add Stripe gem to process credit card payments
 gem 'stripe'
 
+# Add ranked-model gem to organize lesson items
+gem 'ranked-model'
+
 # Add gem fog to connect S3 to CarrierWave
 # gem 'fog'
 

@@ -35,14 +35,16 @@
 				          data-locale="auto"></script>
 				<% end %>
 			<% end %>	
-			
+
 		<% end %>
 	</div>
 
+	<!-- Display Course Description -->
 	<div class="col-sm-8 col-xs-12">
 		<%= @course.description %>
 	</div>
 
+	<!-- Display Course Sections -->
 	<div class="col-xs-12">
 		<% @course.sections.order(created_at: :asc).each do |section| %>
 			<br /><br />
@@ -50,7 +52,9 @@
 				<h3>
 					<%= section.title %>
 				</h3>
-				<% section.lessons.order(created_at: :asc).each do |lesson| %>
+
+				<!-- Display Course Lessons -->
+				<% section.lessons.rank(:row_order).each do |lesson| %>
 					<div class="col-xs-12 col-sm-6">	
 						<div class="lesson text-center">
 							<br />
@@ -62,6 +66,8 @@
 						</div>
 					</div>
 				<% end %>
+				<!-- End Display Course Lessons -->
+
 				<br class="clr" />
 			</div>
 		<% end %>
