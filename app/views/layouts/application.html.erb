@@ -45,20 +45,19 @@
       </div><!-- /.container-fluid -->
     </nav>
 
-    <% if notice.present? %>
-      <div class="alert alert-success alert-dismissable">
-        <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
-        <%= notice %>
-      </div>
+    <% {alert: "danger", notice: "success"}.each do |key, value| %>
+      <% if flash[key].present? %>
+        <div class="container">
+          <div class="alert alert-<%= value %> alert-dismissable">
+            <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+            <%= flash[key] %>
+          </div>
+        </div>
+      <% end %>
     <% end %>
+
     
-    <% if alert.present? %>
-      <div class="alert alert-danger alert-dismissable">
-        <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
-        <%= alert %>
-      </div>
-    <% end %>
-    
+  
     <%= yield %>
 
 
