@@ -8,14 +8,13 @@ class Course < ActiveRecord::Base
 
   validates :title, presence: true
   validates :description, presence: true
-  validates :cost, presence: true, numericality: {greater_than_or_equal_to: 0}
+  validates :cost, presence: true, numericality: { greater_than_or_equal_to: 0 }
 
   def free?
-  	cost.zero?
+    cost.zero?
   end
 
   def premium?
-  	! free?
+    !free?
   end
-
 end

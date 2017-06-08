@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-ruby "2.3.0"
+ruby '2.3.3'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.1'
@@ -71,12 +71,11 @@ gem 'rails_12factor', group: :production
 
 # boostrap stuff
 gem 'bootstrap-sass', '~> 3.3.5.1'
-gem 'sprockets', '2.11.0'
 gem 'sass-rails'
+gem 'sprockets', '2.11.0'
 
 # Use Devise gem for user authentication
 gem 'devise'
 
 # Use Simpleform for form creation
 gem 'simple_form'
-

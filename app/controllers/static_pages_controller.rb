@@ -1,15 +1,9 @@
 class StaticPagesController < ApplicationController
-  def index
-  end
+  def index; end
 
-  def privacy
-  end
+  def privacy; end
 
-  def careers
-  end
+  def careers; end
 
-  def team
-  end
-
-  
+  def team; end
 end
