@@ -1,0 +1,49 @@
+Rails:
+  Enabled: true
+
+AllCops:
+  Exclude:
+    - 'bin/**/*'
+    - 'db/schema.rb'
+    - 'vendor/**/*'
+
+  DisplayCopNames: true
+  DisplayStyleGuide: true
+
+Metrics/AbcSize:
+  Max: 25
+
+Metrics/BlockLength:
+  Max: 55
+
+Metrics/LineLength:
+  Max: 100
+  Exclude:
+    - 'db/seeds.rb'
+    - 'config/initializers/secret_token.rb'
+    - 'config/initializers/devise.rb'
+
+Metrics/MethodLength:
+  Exclude:
+    - 'db/migrate/*'
+    - 'app/controllers/enrollments_controller.rb'
+
+Style/ClassAndModuleChildren:
+  Enabled: false
+
+Style/Documentation:
+  Enabled: false
+
+Style/ExtraSpacing:
+  Exclude:
+    - 'config/initializers/carrierwave.rb'
+
+Style/FrozenStringLiteralComment:
+  Enabled: false
+
+Style/GuardClause:
+  Exclude:
+    - 'app/controllers/lessons_controller.rb'
+    - 'app/controllers/instructor/sections_controller.rb'
+    - 'app/controllers/instructor/lessons_controller.rb'
+    - 'app/controllers/instructor/courses_controller.rb'
